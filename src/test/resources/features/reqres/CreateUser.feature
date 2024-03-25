@@ -1,7 +1,7 @@
 Feature: Create user
 
 #  Positive case
-  @Tugas
+  @Latihan
   Scenario: Post create user with valid json
     Given Create user with valid json "CreateUser.json"
     When Send request create new user

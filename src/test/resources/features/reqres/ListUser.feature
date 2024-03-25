@@ -1,7 +1,7 @@
 Feature: Get list user
 
 #  Positive case
-  @Tugas
+  @Latihan
   Scenario Outline: Get list users with valid parameter page
     Given Get list user with parameter page <page>
     When Send request get list users

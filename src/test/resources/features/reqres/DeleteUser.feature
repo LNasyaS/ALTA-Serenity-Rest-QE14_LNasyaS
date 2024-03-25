@@ -1,7 +1,7 @@
 Feature: Delete user
 
 #  Positive case
-  @Tugas
+  @Latihan
   Scenario: Delete user with valid user id
     Given Delete user with valid user 2
     When Send request delete user

@@ -1,7 +1,7 @@
 Feature: Update user
 
 #  Positive case
-  @Tugas
+  @Latihan
   Scenario Outline: Update user with valid json and user id
     Given Update user with valid json "<json>" and user id <id>
     When Send request update user
@@ -14,7 +14,7 @@ Feature: Update user
       | 2  | UpdateUser2.json | LNasya Syafitrie Update 2 | QA Engineer Update 2 |
       | 3  | UpdateUser3.json | LNasya Syafitrie Update 3 | QA Engineer Update 3 |
 
-#  Positive case
+#  Negative case
   @Tugas
   Scenario: Update user without user id path
     Given Update user with json "UpdateUser1.json" without user id

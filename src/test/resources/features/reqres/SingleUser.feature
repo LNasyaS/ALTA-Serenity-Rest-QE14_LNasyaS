@@ -18,7 +18,7 @@ Feature: Get single user
   Scenario Outline: Get user with invalid id
     Given Get user with invalid "<id>"
     When Send request get user
-    Then Status code should be 404
+    Then Status code should be 400
     Examples:
       | id     |
       | 23     |

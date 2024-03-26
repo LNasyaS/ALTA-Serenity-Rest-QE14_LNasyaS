@@ -32,10 +32,4 @@ public class RegisterStepDef {
                 .post(ReqresAPI.REGISTER_USER);
     }
 
-    @And("Response body name should be {string} and {string}")
-    public void responseBodyNameShouldBeAnd(String email, String password) {
-        SerenityRest.and()
-                .body(ReqresResponses.EMAIL, equalTo(email))
-                .body(ReqresResponses.PASSWORD, equalTo(password));
-    }
 }

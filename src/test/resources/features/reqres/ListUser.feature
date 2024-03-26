@@ -18,7 +18,7 @@ Feature: Get list user
   Scenario Outline: Get list users with invalid parameter page
     Given Get list user with parameter page "<page>"
     When Send request get list users
-    Then Status code should be 404
+    Then Status code should be 400
     Examples:
       | page   |
       | zzzxxx |

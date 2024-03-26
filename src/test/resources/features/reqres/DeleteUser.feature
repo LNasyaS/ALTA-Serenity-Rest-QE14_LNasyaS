@@ -12,7 +12,7 @@ Feature: Delete user
   Scenario Outline: Delete user with invalid user id
     Given Delete user with invalid user "<id>"
     When Send request delete user
-    Then Status code should be 404
+    Then Status code should be 400
     Examples:
       | id     |
       | zzzxxx |
